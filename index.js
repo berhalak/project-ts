@@ -56,7 +56,7 @@ function createImportFile(name, path, refs, projects){
 		if (!proj){
 			throw new Error(`Project ${name} references invalid project ${r}`);
 		}
-		return relative(path, proj.path);
+		return relative(path, proj.path).split("\\").join("/");
 	});
 	content = paths.map(p => `export * from "${p}"`).join(nl);
 	writeFileSync(join(path, "import.ts"), content);

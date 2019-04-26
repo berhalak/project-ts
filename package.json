@@ -1,0 +1,26 @@
+{
+	"name": "project-ts",
+	"version": "1.0.2",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"example": "example"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/berhalak/project-ts.git"
+	},
+	"bin": {
+		"project-ts": "./bin/global.js"
+	},
+	"preferGlobal": true,
+	"author": "berhalak",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/berhalak/project-ts/issues"
+	},
+	"homepage": "https://github.com/berhalak/project-ts#readme"
+}
